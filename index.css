@@ -80,6 +80,28 @@ table, th, td {
 th, td {
     padding: 10px;
 }
+footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 32px;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .content {
+        padding: 40px 20px;
+    }
+}
+
 
 
 
