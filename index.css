@@ -1,9 +1,19 @@
-.navbar{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    background: blue;
+    background: rgba(0,0,0,0.7);
     padding: 15px;
     text-align: center;
-text-decoration: none;
 }
