@@ -55,7 +55,31 @@ body {
 }
 
 .title {
-    font-size: 48px;
+    font-size: 46px;
     letter-spacing: 4px;
 }
+.subtitle {
+    font-size: 32px;
+}
+.content {
+    padding: 80px 50px;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 70%;
+}
+
+table, th, td {
+    border: 1px solid #333;
+}
+
+th, td {
+    padding: 10px;
+}
+
+
 
