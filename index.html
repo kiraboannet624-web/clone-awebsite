@@ -1,89 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parallax Website Clone</title>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parallax Template Clone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
 </head>
 
-<body>
-    <header>
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-    <section id="home" class="parallax bg1">
-        <div class="caption">
-            <span class="title">MY PARALLAX SITE</span>
-        </div>
-    </section>
-    <section id="about" class="content">
-        <h2>About</h2>
-        <p>
-            This website a parallax scrolling.
-        </p>
-    </section>
-    <section class="parallax bg2">
-        <div class="caption">
-            <span class="subtitle">SCROLLDOWN</span>
-            <img src="gallery.jpg" alt="gallery image">
+<body class="text-gray-700">
+  <div class="fixed top-0 w-full bg-white shadow z-50">
+    <div class="flex justify-center gap-8 py-4 text-sm tracking-widest uppercase">
+      <a href="#home" class="hover:text-gray-500">Home</a>
+      <a href="#about" class="hover:text-gray-500">About</a>
+      <a href="#portfolio" class="hover:text-gray-500">Portfolio</a>
+      <a href="#contact" class="hover:text-gray-500">Contact</a>
+    </div>
+  </div>
+  <section id="home"
+    class="h-screen bg-[url('images/parallax1.jpg')] bg-fixed bg-center bg-cover flex items-center justify-center">
+    <div class="bg-black/70 px-10 py-6">
+      <span class="text-white text-2xl tracking-[0.3em]">MY WEBSITE</span>
+      </div>
+      <p>provides more detailed information about person or business behind the website helps vistors understand yr story and builds creadibility by showing yr personality and passion of yr work
+        bg,skills, experience,values and goals
+      </p>
+  </section>
+  <img src="contact.jpg" alt="contact" class="center">
 
-        </div>
-    </section>
-    </section>
-    <section id="gallery" class="content">
-        <h2>Gallery</h2>
+  <section id="about" class="py-24 px-6 max-w-5xl mx-auto text-center">
+    <h3 class="text-xl tracking-widest mb-6">ABOUT ME</h3>
+    <p class="leading-7">
+      this website is desgined to present a professional online presence.It introduces the individual or business showcases work through portfolio
+      background info etc....
+    </p>
+    <img src="about.jpg" alt="about page">
+  </section>
 
-        <table>
-            <tr>
-                <th>Places</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td>Beach</td>
-                <td>ocean view</td>
-            </tr>
-            <tr>
-                <td>Mountains</td>
-                <td>Fresh air and hiking</td>
-            </tr>
-        </table>
-        <img src="about.jpg" alt="table image">
+  
+  <section
+    class="h-[400px] bg-[url('images/parallax2.jpg')] bg-fixed bg-center bg-cover flex items-center justify-center">
+    <div class="bg-black/70 px-10 py-6">
+      <span class="text-white text-xl tracking-[0.3em]">PORTFOLIO</span>
+    </div>
+  </section>
 
-    </section>
-    <section class="parallax bg3">
-        <div class="caption">
-            <span class="subtitle">CONTACT US</span>
-            <img src="contact.jpg" alt="contact image">
+  <section id="portfolio" class="py-24 px-6 max-w-5xl mx-auto text-center">
+    <h3 class="text-xl tracking-widest mb-6">MY WORK</h3>
+    <p class="leading-7">
+     this page showcases your work and achievements ,it includes simple of projects images description and links if available
+     each item highlights your skills creativity and experience.
+    </p>
+  </section>
+  <img src="gallery.jpg" alt="gallery">
 
-        </div>
-        
+  <section
+    class="h-[400px] bg-[url('images/parallax3.jpg')] bg-fixed bg-center bg-cover flex items-center justify-center">
+    <div class="bg-black/70 px-10 py-6">
+      <span class="text-white text-xl tracking-[0.3em]">CONTACT</span>
+    </div>
+  </section>
 
+  <section id="contact" class="py-24 px-6 max-w-5xl mx-auto text-center">
+    <form class="max-w-md mx-auto mt-10 p-6 bg-blue-300 shadow-lg rounded-lg">
+      <label>username</label>
+      <input type="text" name="username" required="username"><br><br>
+      <label>email</label>
+      <input type="email" name="email" required="email"><br>
+      <button>submit</button>
+    </form>
+    <h3 class="text-xl tracking-widest mb-6">WHERE I WORK</h3>
 
-    </section>
-    
-    <section id="contact" class="content">
-        <h2>Contact</h2>
+    <iframe src="https://www.google.com/maps?q=Kigali,Rwanda&output=embed" width="100%" height="300"
+    style="border:0;" loading="lazy">
+</iframe>
+  </section>
 
-        <iframe src="https://www.google.com/maps?q=Kigali,Rwanda&output=embed" width="100%" height="300"
-            style="border:0;" loading="lazy">
-        </iframe>
-    </section>
-
-    <footer>
-        <p>2026 Parallax Clone Designed by Kirabo Annet</p>
-    </footer>
-</body>
-</html>
-
-
+  <footer class="bg-black text-white text-center py-10">
+    <p>Powered by Kirabo Annet</p>
+  </footer>
 
 </body>
-
 </html>
