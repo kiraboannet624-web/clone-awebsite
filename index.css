@@ -150,6 +150,21 @@
   .web { width: 85%; }
   .frontend { width: 90%; }
   .creativity { width: 80%; }
+
+  .stats {
+    background: #333;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .stats h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
   
   
   .contact-form input,
