@@ -49,6 +49,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    
   }
   
   .bg1 {
@@ -58,6 +60,8 @@
   .bg2 {
     height: 400px;
     background-image: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
+    
+    
   }
   
   .bg3 {
@@ -71,6 +75,9 @@
     color: white;
     padding: 40px;
     text-align: center;
+    border-radius: 8px;
+
+
   }
   
   .parallax-text {
@@ -112,7 +119,15 @@
   .gallery img {
     width: 100%;
     border-radius: 10px;
+  transition: transform 0.5s, opacity 0.5s
   }
+
+
+
+.gallery img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
   
   
   .contact {
@@ -164,22 +179,34 @@
     font-size: 40px;
     margin-bottom: 10px;
   }
-  
-  
+ 
+  .contact-form {
+    background: cyan;
+    padding: 30px;
+    border-radius: 12px;
+    color: white;
+  }
+
   
   .contact-form input,
   .contact-form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
   }
   
   .contact-form button {
     background: #2563eb;
-    color: white;
     padding: 10px 20px;
-    border: none;
     cursor: pointer;
+    background: white;
+  color: #2563eb;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 6px;
   }
   
   .map iframe {
@@ -196,6 +223,11 @@
     text-align: center;
     padding: 20px;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
   
   
   @media (max-width: 768px) {
